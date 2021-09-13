@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B0C10;
+  background-image: radial-gradient(at 47% 33%, #0a0b0f 0, transparent 59%), radial-gradient(at 82% 65%, #2f4051 0, transparent 55%);
+  height: 100vh;
+}
+
+* {
+  font-family: "Inter";
+}
+
+p {
+  color: #FFF;
+}
+
+h1 {
+  font-family: "Josefin Sans", "sans-serif";
+  color: #FFF;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nav {
+  width: 100%;
+  box-shadow: 0 1px 0px white;
+}
+header .nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 1em;
+}
+@media (min-width: 641px) {
+  header .nav ul {
+    padding: 1em 7em;
+  }
+}
+header .nav ul li {
+  font-size: 14;
+}
+header .nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+header h1 {
+  margin-top: 1em;
+}
+@media (min-width: 641px) {
+  header h1 {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1025px) {
+  header h1 {
+    margin-top: 2em;
+    font-size: 86px;
+    letter-spacing: 10px;
+  }
+}
+header .subtext {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 7px;
+  color: #DBE8D4;
+  text-align: center;
+}
+@media (min-width: 641px) {
+  header .subtext {
+    margin-top: 1em;
+    font-size: 1em;
+  }
+}
+header img {
+  margin: 2em;
+  border: 1px solid #FFF;
+  border-radius: 100%;
+  object-fit: cover;
+}
+header .welcome, header .intro {
+  align-self: flex-start;
+  padding: 1em;
+  color: #DBE8D4;
+}
+
+/*# sourceMappingURL=style.css.map */

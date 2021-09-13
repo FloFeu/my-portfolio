@@ -1,0 +1,13 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background-color;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(228.00, 19%, 5%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(209.03, 27%, 25%) 0, transparent 55%);
+    height: 100vh;
+}

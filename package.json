@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Neiloe's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch ./sass/main.scss:./css/style.css",
+    "sass-prod": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/style/styleprefixed/"
+  },
+  "keywords": [
+    "portfolio",
+    "webdev",
+    "frontend",
+    "backend"
+  ],
+  "author": "FloFeu",
+  "license": "ISC"
+}
