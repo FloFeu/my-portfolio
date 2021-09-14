@@ -9,5 +9,6 @@ body{
     background-image: 
         radial-gradient(at 47% 33%, hsl(228.00, 19%, 5%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(209.03, 27%, 25%) 0, transparent 55%);
+    background-attachment: fixed;
     height: 100vh;
 }

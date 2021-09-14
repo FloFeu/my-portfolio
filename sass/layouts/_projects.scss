@@ -1,0 +1,74 @@
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  h2 {
+    font-size: 4rem;
+    align-self: top;
+    margin-top: 2em;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid $primary-color;
+  }
+  .container {
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      display: inline-block;
+      margin: 0.5em;
+      vertical-align: middle;
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: gray;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        text-decoration: none;
+        
+        &:hover{
+            opacity: 1;
+            .project-title{
+                opacity: 0;
+            }
+        }
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+        .project-title {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding: 0.5em;
+          font-weight: 700;
+          opacity: 1;
+          color: $white;
+          text-align: center;
+          text-shadow: 0 1px 0 #110d17, 0 -1px 0 #110d17, 1px 0 0 #110d17,
+            -1px 0 0 #110d17;
+            transition: opacity 0.5s ease;
+        }
+      }
+      .p7 {
+        background-image: url("../../lib/p7/p7_homepage.png");
+      }
+      .p6{
+          background-image: url("../../lib/P6/p6_code.png")
+      }
+    }
+  }
+}
