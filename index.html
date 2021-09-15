@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florent's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Interests</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
@@ -35,29 +37,61 @@
     </header>
     <main>
         <section id="projects">
-            <h2>PROJECTS</h2>
+            <h2 class="part__title">PROJECTS</h2>
             <ul class="container">
-                <li> <a class="p7" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                    <span class="project-title">GROUPOMANIA Company Social Network</span>
+                <li> <a class="p7" href="https://github.com/FloFeu/FlorentFeugere_7_28052021"
+                        style="background-image: url('./lib/p7/p7_homepage.png')"
+                        title="Groupomania">
+                        <span class="project-title">GROUPOMANIA Company Social Network</span>
                     </a>
                 </li>
-                <li><a class="p6" href="https://github.com/FloFeu/FlorentFeugere_6_25032021">
-                    <span class="project-title">So Pekocko Food Review API</span></a></li>
-                <li><a class="p5" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                        <img src="" alt="" width="320"></a></li>
-                <li><a class="p4" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                        <img src="" alt="" width="320"></a></li>
-                <li><a class="p3" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                        <img src="" alt="" width="320"></a></li>
-                <li><a class="p2" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                        <img src="" alt="" width="320"></a></li>
-                <li><a class="p1" href="https://github.com/FloFeu/FlorentFeugere_7_28052021">
-                        <img src="" alt="" width="320"></a></li>
-
+                <li><a class="p6" href="https://github.com/FloFeu/FlorentFeugere_6_25032021"
+                        style="background-image: url('./lib/P6/p6_code.png')"
+                        title="So Pekocko">
+                        <span class="project-title">So Pekocko Food Review API</span></a></li>
+                <li><a class="p5" href="https://github.com/FloFeu/FlorentFeugere_5_22022021"
+                        style="background-image: url('./lib/p5/p5_index.png')"
+                        title="Orinoco">
+                        <span class="project-title">Orinoco - Initiation to JavaScript</span>
+                    </a></li>
+                <li><a class="p4" href="https://github.com/FloFeu/FlorentFeugere_4_29012021"
+                        style="background-image: url('./lib/p4/p4_lighthouse.png')"
+                        title="La Chouette Agence">
+                        <span class="project-title">La Chouette Agence - SEO optimization</span>
+                    </a></li>
+                <li><a class="p3" href="https://github.com/FloFeu/FlorentFeugere_3_11012021"
+                        style="background-image: url('./lib/p3/p3_index.png')"
+                        title="Ohmyfood">
+                        <span class="project-title">Ohmyfood - learning CSS animations </span>
+                    </a></li>
+                <li><a class="p2" href="https://github.com/FloFeu/FlorentFeugere_2_15122020"
+                        style="background-image: url('./lib/p2/p2_index.png')"
+                        title="Reservia">
+                        <span class="project-title">Reservia - HTML / CSS first project </span>
+                    </a></li>
             </ul>
         </section>
-    </main>
-    <footer></footer>
+        <section id="skills">
+            <h2 class="part__title">SKILLS</h2>
+            <div class="title__container">
+                <h3>HARD SKILLS</h3>
+                <ul class="hard__container">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-sass"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-vuejs"></i></li>
+                    <li><i class="fab fa-node"></i></li>
+                    <i class="fab fa-github"></i>
+                </ul>
+                <p class="hard__text">Throughout my courses and my researchs, I learned to use Git, HTML, CSS, Sass, JavaScript, its framework Vue.js, Node.js and its framework Express, MongoDB, MySQL, Sequelize.</p>
+                <p class="hard__text">I am open to learn anything you need me to know.</p>
+                <h3>SOFT SKILLS</h3>
+            </div>
+            </div>
+        </section>
+        </main>
+        <footer></footer>
 </body>
 
 </html>

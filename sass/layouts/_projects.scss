@@ -16,10 +16,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include desktop{
+      margin: auto;
+    }
+    
     li {
       display: inline-block;
       margin: 0.5em;
       vertical-align: middle;
+      @include desktop {
+        margin: 2em;
+      }
       a {
         position: relative;
         display: flex;
@@ -28,16 +35,22 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        border-radius: 50%;
+        border: 1px solid $primary-color;
         width: 8rem;
         height: 8rem;
         text-decoration: none;
-        
-        &:hover{
-            opacity: 1;
-            .project-title{
-                opacity: 0;
-            }
+        @include desktop{
+          width: 15rem;
+          height: 15rem;
+        }
+        &:hover {
+          opacity: 1;
+          &::before {
+            background-color: rgba($color: $background-color, $alpha: 0);
+          }
+          .project-title {
+            opacity: 0;
+          }
         }
         &::before {
           content: "";
@@ -48,26 +61,21 @@
           width: 100%;
           height: 100%;
           z-index: 0;
+          background-color: rgba($color: $background-color, $alpha: 0.7);
+          transition: background-color 0.3s ease;
         }
         .project-title {
           position: relative;
           display: block;
           width: 100%;
-          padding: 0.5em;
           font-weight: 700;
           opacity: 1;
           color: $white;
           text-align: center;
           text-shadow: 0 1px 0 #110d17, 0 -1px 0 #110d17, 1px 0 0 #110d17,
             -1px 0 0 #110d17;
-            transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
         }
-      }
-      .p7 {
-        background-image: url("/lib/p7/p7_homepage.png");
-      }
-      .p6{
-          background-image: url("/lib/P6/p6_code.png")
       }
     }
   }

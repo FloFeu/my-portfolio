@@ -1,0 +1,39 @@
+#skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  .title__container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    .hard__container {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      margin: 1em 1em;
+      i {
+        color: $white;
+        font-size: 3em;
+        transition: transform 0.3s ease-out;
+        margin: 0.5em;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .hard__text {
+      text-align: justify;
+      margin-bottom: 2em;
+      color: $primary-color;
+    }
+  }
+}
