@@ -20,20 +20,48 @@
       justify-content: center;
       list-style: none;
       margin: 1em 1em;
-      i {
+      .fab {
         color: $white;
         font-size: 3em;
-        transition: transform 0.3s ease-out;
+        transition: all 0.2s ease-out;
         margin: 0.5em;
         &:hover {
           transform: scale(1.2);
         }
+      }
+      .fa-html5:hover {
+        color: #e34f26;
+      }
+      .fa-css3-alt:hover {
+        color: #2965f1;
+      }
+      .fa-sass:hover{
+        color: #cd6799;
+      }
+      .fa-js:hover{
+        color: #f0db4f;
+      }
+      .fa-vuejs:hover{
+        color: #42b883;
+      }
+      .fa-node:hover{
+        color: #44883e;
       }
     }
     .hard__text {
       text-align: justify;
       margin-bottom: 2em;
       color: $primary-color;
+    }
+    .soft__container{
+      text-align: center;
+      margin-top: 1em;
+      list-style: none;
+      color: $primary-color;
+      text-transform: uppercase;
+      li{
+        margin-top: 0.5em;
+      }
     }
   }
 }

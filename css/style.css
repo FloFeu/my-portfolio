@@ -85,7 +85,7 @@ header .nav ul li a {
   color: #FFF;
 }
 header h1 {
-  font-size: 38px;
+  font-size: 34px;
 }
 @media (min-width: 641px) {
   header h1 {
@@ -249,19 +249,47 @@ header .welcome, header .intro {
   list-style: none;
   margin: 1em 1em;
 }
-#skills .title__container .hard__container i {
+#skills .title__container .hard__container .fab {
   color: #FFF;
   font-size: 3em;
-  transition: transform 0.3s ease-out;
+  transition: all 0.2s ease-out;
   margin: 0.5em;
 }
-#skills .title__container .hard__container i:hover {
+#skills .title__container .hard__container .fab:hover {
   transform: scale(1.2);
+}
+#skills .title__container .hard__container .fa-html5:hover {
+  color: #e34f26;
+}
+#skills .title__container .hard__container .fa-css3-alt:hover {
+  color: #2965f1;
+}
+#skills .title__container .hard__container .fa-sass:hover {
+  color: #cd6799;
+}
+#skills .title__container .hard__container .fa-js:hover {
+  color: #f0db4f;
+}
+#skills .title__container .hard__container .fa-vuejs:hover {
+  color: #42b883;
+}
+#skills .title__container .hard__container .fa-node:hover {
+  color: #44883e;
 }
 #skills .title__container .hard__text {
   text-align: justify;
   margin-bottom: 2em;
   color: #DBE8D4;
+}
+#skills .title__container .soft__container {
+  text-align: center;
+  margin-top: 1em;
+  list-style: none;
+  color: #DBE8D4;
+  text-transform: uppercase;
+}
+#skills .title__container .soft__container li {
+  margin-top: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
