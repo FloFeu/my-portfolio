@@ -27,6 +27,11 @@ header {
           text-decoration: none;
           color: $white;
         }
+        .active {
+          border-bottom: 3px solid $primary-color;
+          color: $primary-color;
+          padding-bottom: 0.25rem;
+        }
       }
     }
   }
