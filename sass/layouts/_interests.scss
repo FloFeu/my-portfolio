@@ -1,0 +1,32 @@
+#interests {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+
+  .part__content {
+    width: 90%;
+    @include tablet {
+      width: 60%;
+    }
+    @include desktop{
+      width: 40%;
+    }
+    p {
+      margin: 0.5rem auto;
+      color: $primary-color;
+      text-transform: uppercase;
+      text-align: justify;
+
+      a {
+        text-decoration: none;
+        color: $opposite-color;
+      }
+      span {
+        color: $opposite-color;
+      }
+    }
+  }
+}

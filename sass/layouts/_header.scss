@@ -1,6 +1,5 @@
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   .nav {
@@ -19,7 +18,7 @@ header {
       @include tablet {
         padding: 1em 7em;
       }
-      @include desktop{
+      @include desktop {
         padding: 1em 20em;
       }
       li {
@@ -32,9 +31,10 @@ header {
     }
   }
   h1 {
-    font-size: 34px;
+    margin-top: 3em;
+    font-size: 32px;
     @include tablet {
-      margin-top: 3em;
+      margin-top: 0;
       font-size: 64px;
     }
     @include desktop {
@@ -54,25 +54,30 @@ header {
       margin-top: 1em;
       font-size: 1em;
     }
-
   }
   img {
-    margin: 4em; 
+    margin: 4em;
     border: 1px solid $white;
     border-radius: 100%;
     object-fit: cover;
   }
-  
 
-  .welcome, .intro {
-    align-self: flex-start;
+  .welcome,
+  .intro {
     padding: 1em;
     color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 4px;
+    @include tablet {
+      width: 60%;
+      text-align: justify;
+    }
+    @include desktop{
+      width: 40%;
+    }
   }
 }
-#home{
+#home {
   height: 100vh;
   display: flex;
   flex-direction: column;
