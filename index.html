@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Florent Feugere's Portfolio">
-    <title>Florent's Portfolio</title>
-    <link rel="stylesheet" href="./css/style/styleprefixed/style.css">
-    <link rel="stylesheet" rel="preload" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="description" content="Hey, do you need a website ? Consider this as my online resume. You will find here the projects I worked on, my interests and how to reach me.">
+    <title>Florent Feugere Portfolio - Web Developer - Fullstack JavaScript</title>
+    <link rel="stylesheet preload" as="style" href="./css/style/styleprefixed/style.css">
+    <link rel="stylesheet preload" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" as="style">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav  class="nav">
+        <nav class="nav">
             <ul id="nav_ul">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -27,7 +27,7 @@
         <section id="home">
             <h1>FLORENT FEUGERE</h1>
             <p class="subtext">From baker to web developer</p>
-            <img width="144px" height="144px" src="./lib/itsame.jpg" alt="Florent">
+            <img width="144" height="144" src="./lib/avatar.jpg" alt="Florent">
 
             <p class="welcome">
                 Welcome to my personal page.
@@ -78,7 +78,7 @@
                     <li><i class="fab fa-js"></i></li>
                     <li><i class="fab fa-vuejs"></i></li>
                     <li><i class="fab fa-node"></i></li>
-                    <i class="fab fa-github"></i>
+                    <li><i class="fab fa-github"></i></li>
                 </ul>
                 <p class="hard__text">Throughout my courses and researchs, I learned to use Git, HTML, CSS, Sass,
                     JavaScript, its framework Vue.js, Node.js and its framework Express, MongoDB, MySQL, Sequelize.</p>
@@ -135,7 +135,7 @@
         <section id="resume">
             <h2 class="part__title">RESUME</h2>
             <a href="./lib/CV.pdf">
-                <img src="./lib/resume_preview.png" alt="resume_preview" width="275">
+                <img src="./lib/resume_preview.png" alt="resume_preview" width="297" height="415">
             </a>
         </section>
     </main>
@@ -143,24 +143,24 @@
         <div class="container">
             <div class="contact">
                 <a href="mailto:florent.feugere@gmail.com" title="Email me"
-                    targer="_blank">florent.feugere@gmail.com</a>
+                    target="_blank">florent.feugere@gmail.com</a>
             </div>
             <ul class="links">
                 <li>
-                    <a href="https://github.com/FloFeu"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/FloFeu" title="My github"><i class="fab fa-github"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/FeugereFlorent">
+                    <a href="https://twitter.com/FeugereFlorent" title="My twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
-                <li><a href="https://www.linkedin.com/in/florent-feugere/">
+                <li><a href="https://www.linkedin.com/in/florent-feugere/" title="My linkedin">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
             </ul>
             <p class="copyright">© Florent Feugere</p>
-            <button id="to-top" class="to-top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+            <button aria-label="scroll to top" id="to-top" class="to-top"><i class="fas fa-arrow-alt-circle-up"></i></button>
         </div>
     </footer>
 </body>
