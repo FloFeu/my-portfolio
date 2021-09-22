@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin: auto;
-
+  scroll-behavior: smooth;
   .part__content {
     width: 90%;
     @include tablet {
